@@ -1,15 +1,16 @@
 
-const toggleBtn = document.getElementById("toggleMusic");
-const player = document.getElementById("ytplayer");
-let isPlaying = true;
+const music = document.getElementById("bg-music");
+const toggleBtn = document.getElementById("music-toggle");
+
+let isPlaying = false;
 
 toggleBtn.addEventListener("click", () => {
     if (isPlaying) {
-        player.src = "";
-        toggleBtn.textContent = "🔇 Bật nhạc";
+        music.pause();
+        toggleBtn.textContent = "🔊 Bật nhạc";
     } else {
-        player.src = "https://www.youtube.com/embed/jXwR4_58uy0?autoplay=1&loop=1&playlist=jXwR4_58uy0";
-        toggleBtn.textContent = "🔊 Tắt nhạc";
+        music.play();
+        toggleBtn.textContent = "🔇 Tắt nhạc";
     }
     isPlaying = !isPlaying;
 });

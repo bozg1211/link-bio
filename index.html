@@ -9,23 +9,23 @@
 </head>
 <body>
     <div class="container">
-        <div class="avatar">
-            <img src="assets/avatar.jpg" alt="Avatar" />
-        </div>
-        <h1>Thuỳ Hương</h1>
+        <img src="assets/avatar.png" alt="Avatar" class="avatar" />
+        <h1 class="name">Thuỳ Hương</h1>
+
         <div class="links">
-            <a href="https://facebook.com" target="_blank">🌸 Facebook</a>
-            <a href="https://instagram.com" target="_blank">📸 Instagram</a>
-            <a href="https://tiktok.com" target="_blank">🎵 TikTok</a>
-            <a href="https://locket.camera" target="_blank">🍓 Locket</a>
+            <a href="https://facebook.com" target="_blank" class="btn">🌸 Facebook</a>
+            <a href="https://instagram.com" target="_blank" class="btn">📸 Instagram</a>
+            <a href="https://tiktok.com" target="_blank" class="btn">🎵 TikTok</a>
+            <a href="https://locket.com" target="_blank" class="btn">🧸 Locket</a>
         </div>
-        <div class="music-player">
-            <iframe id="ytplayer" width="0" height="0"
-                src="https://www.youtube.com/embed/jXwR4_58uy0?autoplay=1&loop=1&playlist=jXwR4_58uy0"
-                frameborder="0" allow="autoplay"></iframe>
-            <button id="toggleMusic">🔊 Tắt nhạc</button>
-        </div>
+
+        <button id="music-toggle" class="music-btn">🔊 Bật nhạc</button>
     </div>
+
+    <audio id="bg-music" loop>
+        <source src="https://www.youtube.com/embed/jXwR4_58uy0?autoplay=1" type="audio/mp3">
+    </audio>
+
     <script src="script.js"></script>
 </body>
 </html>
